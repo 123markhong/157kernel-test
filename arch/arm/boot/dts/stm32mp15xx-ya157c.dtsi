@@ -468,7 +468,7 @@
 	pinctrl-names = "default", "sleep";
 	pinctrl-0 = <&uart8_pins_mx>;
 	pinctrl-1 = <&uart8_sleep_pins_mx>;
-	status = "okay";
+	//status = "okay";
 	status = "disabled";
 
 /*rs485*/
@@ -477,7 +477,7 @@
         pinctrl-0 = <&uart5_pins_a>;
         pinctrl-1 = <&uart5_sleep_pins_a>;
 
-        status = "okay";
+       // status = "okay";
 	status = "disabled";
 };
 
@@ -489,7 +489,7 @@
 	pinctrl-1 = <&uart7_sleep_pins_myir>;
 	pinctrl-2 = <&uart7_idle_pins_myir>;
 	uart-has-rtscts;
-	status = "okay";
+	//status = "okay";
 	status = "disabled";
 
 	bluetooth {
