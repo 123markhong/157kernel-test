@@ -377,8 +377,7 @@
      #size-cells = <0>;
      keep-power-in-suspend;
      //status = "okay";
-     status = "disabled";
- 
+ 	status = "disabled";
      brcmf: bcrmf@1 {
          reg = <1>;
          compatible = "brcm,bcm4329-fmac";
@@ -445,6 +444,7 @@
 	//pinctrl-1 = <&m_can1_sleep_pins_a_myir>;
 	//status = "okay";
 	status = "disabled";
+
 	can-transceiver {
 		max-bitrate = <5000000>;
 	};
@@ -470,6 +470,7 @@
 	pinctrl-1 = <&uart8_sleep_pins_mx>;
 	//status = "okay";
 	status = "disabled";
+};
 
 /*rs485*/
 &uart5 {
@@ -477,7 +478,7 @@
         pinctrl-0 = <&uart5_pins_a>;
         pinctrl-1 = <&uart5_sleep_pins_a>;
 
-       // status = "okay";
+        //status = "okay";
 	status = "disabled";
 };
 
