@@ -245,7 +245,8 @@
 	pinctrl-names = "default", "sleep";
 	pinctrl-0 = <&cec_pins_a>;
 	pinctrl-1 = <&cec_pins_sleep_a>;
-	status = "okay";
+	//status = "okay";
+	status = "disabled";
 };
 
 
@@ -255,7 +256,8 @@
         pinctrl-1 = <&i2c2_pins_sleep_a>;
         i2c-scl-rising-time-ns = <100>;
         i2c-scl-falling-time-ns = <7>;
-        status = "okay";
+        //status = "okay";
+	status = "disabled";
         /delete-property/dmas;
         /delete-property/dma-names;
 	//clock-frequency = <100000>;
@@ -374,7 +376,8 @@
      #address-cells = <1>;
      #size-cells = <0>;
      keep-power-in-suspend;
-     status = "okay";
+     //status = "okay";
+     status = "disabled";
  
      brcmf: bcrmf@1 {
          reg = <1>;
@@ -410,7 +413,8 @@
 	vmmc-supply = <&v3v3>;
 	vqmmc-supply = <&vdd>;
 	mmc-ddr-3_3v;
-	status = "okay";
+	//status = "okay";
+	status = "disabled";
 };
 
 /*nand*/
@@ -418,7 +422,8 @@
     pinctrl-names = "default", "sleep";
     pinctrl-0 = <&fmc_pins_a>;
     pinctrl-1 = <&fmc_sleep_pins_a>;
-    status = "okay";
+    //status = "okay";
+	status = "disabled";
     #address-cells = <1>;
     #size-cells = <0>;
                              
@@ -438,8 +443,8 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&m_can1_pins_a_myir>;
 	//pinctrl-1 = <&m_can1_sleep_pins_a_myir>;
-	status = "okay";
-
+	//status = "okay";
+	status = "disabled";
 	can-transceiver {
 		max-bitrate = <5000000>;
 	};
@@ -454,7 +459,8 @@
 	pinctrl-3 = <&uart4_pins_a>;
 	/delete-property/dmas;
 	/delete-property/dma-names;
-	status = "okay";
+	//status = "okay";
+	status = "disabled";
 };
 
 /*rs232*/
@@ -463,8 +469,7 @@
 	pinctrl-0 = <&uart8_pins_mx>;
 	pinctrl-1 = <&uart8_sleep_pins_mx>;
 	status = "okay";
-	//status = "disable";
-};
+	status = "disabled";
 
 /*rs485*/
 &uart5 {
@@ -473,7 +478,7 @@
         pinctrl-1 = <&uart5_sleep_pins_a>;
 
         status = "okay";
-	//status = "disable";
+	status = "disabled";
 };
 
 
@@ -485,7 +490,7 @@
 	pinctrl-2 = <&uart7_idle_pins_myir>;
 	uart-has-rtscts;
 	status = "okay";
-	//status = "disable";
+	status = "disabled";
 
 	bluetooth {
 		pinctrl-names = "default";
