@@ -22,8 +22,7 @@
         	reset-gpios = <&gpioe 11 GPIO_ACTIVE_HIGH>;
 
 		//backlight = <&panel_backlight>;
-       	 	//status = "okay";
-		status = "disabled";
+       	 	status = "okay";
 		
 		port {
 			panel_in: endpoint {

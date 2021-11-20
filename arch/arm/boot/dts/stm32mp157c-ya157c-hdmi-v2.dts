@@ -66,8 +66,7 @@
 	pinctrl-names = "default", "sleep";
 	pinctrl-0 = <&i2s2_pins_a>;
 	pinctrl-1 = <&i2s2_pins_sleep_a>;
-	//status = "okay";
-	status = "disabled";
+	status = "okay";
 
 	i2s2_port: port {
 		i2s2_endpoint: endpoint {
@@ -84,8 +83,7 @@
     pinctrl-names = "default", "sleep";
     pinctrl-0 = <&ltdc_pins_a>;
     pinctrl-1 = <&ltdc_pins_sleep_a>;
-    //status = "okay";
-	status = "disabled";
+    status = "okay";
     port {
             #address-cells = <1>;
             #size-cells = <0>;
