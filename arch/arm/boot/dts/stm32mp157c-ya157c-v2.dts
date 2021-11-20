@@ -153,7 +153,8 @@
 &sdmmc3 {
 	vmmc-supply = <&vmmcsd_fixed>;
 	mmc-pwrseq = <&wifi_pwrseq>;
-	status = "okay";
+	//status = "okay";
+	status = "disabled";
 
 };
 
@@ -161,7 +162,8 @@
 &sdmmc2 {
 	vmmc-supply = <&vmmc>;
         vqmmc-supply = <&vmmc>;
-        status = "okay";
+        //status = "okay";
+	status = "disabled";
 };
 
 /*SD card*/
