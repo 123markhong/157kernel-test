@@ -31,7 +31,7 @@
 
 			cec_pins_a: cec-0 {
 				pins {
-					pinmux = <STM32_PINMUX('A', 15, AF4)>;
+					//pinmux = <STM32_PINMUX('A', 15, AF4)>;
 					bias-disable;
 					drive-open-drain;
 					slew-rate = <0>;
@@ -40,13 +40,13 @@
 
 			cec_pins_sleep_a: cec-sleep-0 {
 				pins {
-					pinmux = <STM32_PINMUX('A', 15, ANALOG)>; /* HDMI_CEC */
+					//pinmux = <STM32_PINMUX('A', 15, ANALOG)>; /* HDMI_CEC */
 				};
 			};
 
 			cec_pins_b: cec-1 {
 				pins {
-					pinmux = <STM32_PINMUX('B', 6, AF5)>;
+					//pinmux = <STM32_PINMUX('B', 6, AF5)>;
 					bias-disable;
 					drive-open-drain;
 					slew-rate = <0>;
@@ -55,7 +55,7 @@
 
 			cec_pins_sleep_b: cec-sleep-1 {
 				pins {
-					pinmux = <STM32_PINMUX('B', 6, ANALOG)>; /* HDMI_CEC */
+					//pinmux = <STM32_PINMUX('B', 6, ANALOG)>; /* HDMI_CEC */
 				};
 			};
 
@@ -466,7 +466,7 @@
 
 			i2c5_pins_a: i2c5-0 {
 				pins {
-					pinmux = <STM32_PINMUX('A', 11, AF4)>, /* I2C5_SCL */
+					//pinmux = <STM32_PINMUX('A', 11, AF4)>, /* I2C5_SCL */
 						 <STM32_PINMUX('A', 12, AF4)>; /* I2C5_SDA */
 					bias-disable;
 					drive-open-drain;
@@ -510,8 +510,8 @@
 						 <STM32_PINMUX('I',  9, AF14)>, /* LCD_VSYNC */
 						 <STM32_PINMUX('E', 13, AF14)>, /* LCD_DE */
 
-						 <STM32_PINMUX('H',  2, AF14)>, /* LCD_R0 */
-						 <STM32_PINMUX('H',  3, AF14)>, /* LCD_R1 */
+						 //<STM32_PINMUX('H',  2, AF14)>, /* LCD_R0 */
+						 //<STM32_PINMUX('H',  3, AF14)>, /* LCD_R1 */
 						 <STM32_PINMUX('H',  8, AF14)>, /* LCD_R2 */
 						 <STM32_PINMUX('H',  9, AF14)>, /* LCD_R3 */
 						 <STM32_PINMUX('H', 10, AF14)>, /* LCD_R4 */
@@ -529,7 +529,7 @@
 						 <STM32_PINMUX('I',  2, AF14)>, /* LCD_G7 */
 
 						 <STM32_PINMUX('D',  9, AF14)>, /* LCD_B0 */
-						 <STM32_PINMUX('G', 12, AF14)>, /* LCD_B1 */
+						// <STM32_PINMUX('G', 12, AF14)>, /* LCD_B1 */
 						 <STM32_PINMUX('G', 10, AF14)>, /* LCD_B2 */
 						 <STM32_PINMUX('D', 10, AF14)>, /* LCD_B3 */
 						 <STM32_PINMUX('I',  4, AF14)>, /* LCD_B4 */
@@ -1385,7 +1385,7 @@
 
 			btreg0: bt_reg_on-0 {
 				pins {
-					pinmux = <STM32_PINMUX('F', 15, GPIO)>;
+					//pinmux = <STM32_PINMUX('F', 15, GPIO)>;
 					drive-push-pull;
 					bias-pull-up;
 					output-high;
