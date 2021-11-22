@@ -1112,9 +1112,9 @@
 
 			spi5_sleep_pins_a: spi5-sleep-0 {
 				pins {
-					//pinmux = <STM32_PINMUX('F', 7, ANALOG)>, /* SPI5_SCK */
-						// <STM32_PINMUX('F', 8, ANALOG)>, /* SPI5_MISO */
-						// <STM32_PINMUX('F', 9, ANALOG)>; /* SPI5_MOSI */
+					pinmux = <STM32_PINMUX('F', 7, ANALOG)>, /* SPI5_SCK */
+						 <STM32_PINMUX('F', 8, ANALOG)>, /* SPI5_MISO */
+						 <STM32_PINMUX('F', 9, ANALOG)>; /* SPI5_MOSI */
 				};
 			};
 
