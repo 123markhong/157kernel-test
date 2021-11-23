@@ -9,10 +9,10 @@
 #define KERN_ALERT	KERN_SOH "1"	/* action must be taken immediately */
 #define KERN_CRIT	KERN_SOH "2"	/* critical conditions */
 #define KERN_ERR	KERN_SOH "3"	/* error conditions */
-#define KERN_WARNING	KERN_SOH "1"	/* warning conditions */ //origin 4 change 1
+#define KERN_WARNING	KERN_SOH "4"	/* warning conditions */ //origin 4 change 1
 #define KERN_NOTICE	KERN_SOH "5"	/* normal but significant condition */
-#define KERN_INFO	KERN_SOH "1"	/* informational */   //origin 6 change 1
-#define KERN_DEBUG	KERN_SOH "1"	/* debug-level messages */  //origin 7 change 1
+#define KERN_INFO	KERN_SOH "6"	/* informational */   //origin 6 change 1
+#define KERN_DEBUG	KERN_SOH "7"	/* debug-level messages */  //origin 7 change 1
 
 #define KERN_DEFAULT	""		/* the default kernel loglevel */
 
@@ -31,9 +31,9 @@
 #define LOGLEVEL_ALERT		1	/* action must be taken immediately */
 #define LOGLEVEL_CRIT		2	/* critical conditions */
 #define LOGLEVEL_ERR		3	/* error conditions */
-#define LOGLEVEL_WARNING	1	/* warning conditions */
+#define LOGLEVEL_WARNING	4	/* warning conditions */
 #define LOGLEVEL_NOTICE		5	/* normal but significant condition */
-#define LOGLEVEL_INFO		1	/* informational */
-#define LOGLEVEL_DEBUG		1	/* debug-level messages */
+#define LOGLEVEL_INFO		6	/* informational */
+#define LOGLEVEL_DEBUG		7	/* debug-level messages */
 
 #endif
