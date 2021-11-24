@@ -81,7 +81,7 @@
 				 <STM32_PINMUX('H', 12, AF13)>,/* DCMI_D3 */
 				 <STM32_PINMUX('H', 14, AF13)>,/* DCMI_D4 */
 				 <STM32_PINMUX('I', 4,  AF13)>,/* DCMI_D5 */
-				 <STM32_PINMUX('B', 8,  AF13)>,/* DCMI_D6 */
+				// <STM32_PINMUX('B', 8,  AF13)>,/* DCMI_D6 */
 				 <STM32_PINMUX('E', 6,  AF13)>,/* DCMI_D7 */
 				 <STM32_PINMUX('I', 1,  AF13)>,/* DCMI_D8 */
 				 <STM32_PINMUX('H', 7,  AF13)>,/* DCMI_D9 */
@@ -102,7 +102,7 @@
 				 <STM32_PINMUX('H', 12, ANALOG)>,/* DCMI_D3 */
 				 <STM32_PINMUX('H', 14, ANALOG)>,/* DCMI_D4 */
 				 <STM32_PINMUX('I', 4,  ANALOG)>,/* DCMI_D5 */
-				 <STM32_PINMUX('B', 8,  ANALOG)>,/* DCMI_D6 */
+				// <STM32_PINMUX('B', 8,  ANALOG)>,/* DCMI_D6 */
 				 <STM32_PINMUX('E', 6,  ANALOG)>,/* DCMI_D7 */
 				 <STM32_PINMUX('I', 1,  ANALOG)>,/* DCMI_D8 */
 				 <STM32_PINMUX('H', 7,  ANALOG)>,/* DCMI_D9 */

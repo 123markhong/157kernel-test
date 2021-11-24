@@ -90,13 +90,13 @@
 
 	wifi_pwrseq: wifi-pwrseq {
 		compatible = "mmc-pwrseq-simple";
-		reset-gpios = <&gpiof 3 GPIO_ACTIVE_LOW>;
+		//reset-gpios = <&gpiof 3 GPIO_ACTIVE_LOW>;
 	};
 
 	
 	panel_backlight: panel-backlight {
 		compatible = "gpio-backlight";
-		gpios = <&gpiob 8 GPIO_ACTIVE_HIGH>;
+		///gpios = <&gpiob 8 GPIO_ACTIVE_HIGH>;
 		default-on;	
 		status = "okay";
 	};
@@ -270,7 +270,7 @@
               touchscreen-size-x = <800>;
               touchscreen-size-y = <480>;
 
-              reset-gpios = <&gpiog 2 GPIO_ACTIVE_LOW>;
+             // reset-gpios = <&gpiog 2 GPIO_ACTIVE_LOW>;
               status = "okay";
       };
 	
